@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" href="./asset/img/logo.png">
+    <title>FC-BayernMunchen</title>
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+            <!-- navbar menu -->
+            <nav>
+          <img src="./asset/img/bayern-munchen-logo-400x400.png" class="logo" alt="">        
+                <ul class="nav__first">
+                    <li><a href="#">MY BAYERN</a></li>
+                    <li><a href="#">FIRST TEAM</a></li>
+                    <li><a href="#">MANAGER</a></li>
+                    <li><a href="#">LEGEND</a></li>
+                    <img src="./asset/img/flag.png" class="flag" alt="">
+                </ul>
+                <ul class="nav__second">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+            </nav>
+
+            <!--image slider -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio button start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- radio button end -->
+
+                    <!-- slide image start -->
+              <div class="slide first">
+                  <img src="./asset/img/wall1.jpg" alt="">
+              </div>
+              <div class="slide">
+                  <img src="./asset/img/wall2.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="./asset/img/wall3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./asset/img/wall4.jpg" alt="">
+            </div>
+                    <!-- slide image end -->
+
+                    <!-- automatic navigation start -->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    <!-- automatic navigation start -->
+                </div>
+                <!-- manual navigation start -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!-- manual navigation end -->
+            </div>
+
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4){
+                        counter =1;
+                    }
+                }, 5000);
+            </script>
+
+            <!-- Player -->
+          <div class="container">
+                    <!-- Goalkeeper -->
+                    <div class="GK">Goalkeeper</div>
+             <div class="row">
+                <div class="card-01">
+                    <div class="card-01__player">
+                        <img src="./asset/img/GK.png" alt="">
+                    </div>
+                    <div class="card-01__player--number">1</div>
+                    <div class="card-01__player--GK">
+                        Manuel <br> Neuer
+                    </div>
+                   </div>
+                    </div>
+                            <!-- Defender -->
+                            <div class="DEF">Defender</div>
+                    <div class="row">
+                    <div class="card-02">
+                        <div class="card-02__player">
+                            <img src="./asset/img/DEF.png" alt="">
+                        </div>
+                        <div class="card-02__player--number">19</div>
+                        <div class="card-02__player--DEF">
+                            Alphonso <br> Davies
+                        </div>
+                    </div>
+                    <div class="card-02">
+                        <div class="card-02__player">
+                            <img src="./asset/img/DEF1.png" alt="">
+                        </div>
+                        <div class="card-02__player--number">21</div>
+                        <div class="card-02__player--DEF">
+                            Lucas <br> Hernández
+                        </div>
+                    </div>
+                    <div class="card-02">
+                        <div class="card-02__player">
+                            <img src="./asset/img/DEF2.png" alt="">
+                        </div>
+                        <div class="card-02__player--number">2</div>
+                        <div class="card-02__player--DEF">
+                            Dayot <br> Upamecano
+                        </div>
+                    </div>
+                    <div class="card-02">
+                        <div class="card-02__player">
+                            <img src="./asset/img/DEF3.png" alt="">
+                        </div>
+                        <div class="card-02__player--number">5</div>
+                        <div class="card-02__player--DEF">
+                            Benjamin <br> Pavard
+                        </div>
+                    </div>
+                   </div>
+                        <!-- Central Midfield -->
+                 <div class="CMF">Central Midfield</div>
+                     <div class="row">
+                   <div class="card-03">
+                    <div class="card-03__player">
+                        <img src="./asset/img/CMF.png" alt="">
+                    </div>
+                    <div class="card-03__player--number">8</div>
+                    <div class="card-03__player--CMF">
+                        Leon <br> Goretzka
+                    </div>
+                  </div>
+                    <div class="card-03">
+                    <div class="card-03__player">
+                        <img src="./asset/img/CMF1.png" alt="">
+                    </div>
+                    <div class="card-03__player--number">6</div>
+                    <div class="card-03__player--CMF">
+                        Joshua <br> Kimmich 
+                    </div>
+                  </div>
+                  </div>
+                    <!-- Attacking Midfielder -->
+                    <div class="row">
+                        <div class="card-04">
+                            <div class="card-04__player">
+                                <img src="./asset/img/AMF2.png" alt="">
+                            </div>
+                            <div class="card-04__player--number">10</div>
+                            <div class="card-04__player--AMF">
+                                Leroy <br> Sané 
+                            </div>
+                        </div>
+                        <div class="card-04">
+                            <div class="card-04__player">
+                                <img src="./asset/img/AMF.png" alt="">
+                            </div>
+                            <div class="card-04__player--number">25</div>
+                            <div class="card-04__player--AMF">
+                                Thomas <br> Müller
+                            </div>
+                        </div>
+                        <div class="card-04">
+                            <div class="card-04__player">
+                                <img src="./asset/img/AMF1.png" alt="">
+                            </div>
+                            <div class="card-04__player--number">7</div>
+                            <div class="card-04__player--AMF">
+                                Serge <br> Gnabry 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Centre-Forward -->
+                    <div class="CF">Centre-Forward</div>
+                    <div class="row">
+                        <div class="card-05">
+                            <div class="card-05__player">
+                                <img src="./asset/img/CF.png" alt="">
+                            </div>
+                            <div class="card-05__player--number">9</div>
+                            <div class="card-05__player--CF">
+                         Robert <br> Lewandowski 
+                     </div>
+                 </div>
+             </div>
+        </div>
+                <!-- Information Coach -->
+        <div class="coach">
+            <img src="./asset/img/coach.png" alt="" class="coach__img">
+            <div class="manager">Coach</div>
+            <div class="coach-info">
+            <div class="coach-name">Julian <br> Nagelsmann</div>
+            <div class="coach-honours">
+                <div class="coach-achievement">Achievement</div>
+                  <p> As head coach </p>
+                  <p> U19 Bundesliga 2014 </p>
+                  <p> Germany's Coach of the Year 2017 </p>
+                  <p> Youngest head coach in Bundesliga history (aged 28 in 2016) </p>
+                    <class class="meaning"> <p> " It all makes me more mature and more <br> mature in my life, I did things that weren't <br> normal for someone my age."</div> </p>
+                </div>
+        </div>
+
+                    <!-- Legend -->
+                    <div class="legendary">
+                        <div class="legend">Legends</div>
+                        <div class="row">
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                OLIVER <br> KAHN 
+                            </div>
+                        </div>
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend1.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                KLAUS <br> AUGENTHALER  
+                            </div>
+                        </div>
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend2.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                PHILIPP <br> LAHM 
+                            </div>
+                        </div>
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend3.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                BASTIAN <br> SCHWEINSTEIGER  
+                            </div>
+                        </div>
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend4.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                ARJEN <br> ROBBEN  
+                            </div>
+                        </div>
+                       </div>
+                       <div class="row">
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend5.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                GERD <br> MULLER   
+                            </div>
+                        </div>
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend6.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                FRANZ <br> BECKENBAUER  
+                            </div>
+                        </div>
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend7.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                MEHMET <br> SCHOLL  
+                            </div>
+                        </div>
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend8.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                LOTHAR <br> MATTAUS  
+                            </div>
+                        </div>
+                        <div class="card-legend">
+                            <div class="card-legend__player">
+                                <img src="./asset/img/legend9.jpg" alt="">
+                            </div>
+                            <div class="card-legend__player--legend">
+                                STEFAN <br> EFFENBERG   
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                
+            <!-- Footer -->
+            <footer>
+                <div class="footer-content">
+                    <div class="partner">
+                        <div class="partner__slogan">partner</div>
+                        <div class="partner__img1">
+                            <img src="./asset/img/-T---.png" alt="" class="partner__img--1">
+                            <img src="./asset/img/adidas1.png" alt=""  class="partner__img--2">
+                            <img src="./asset/img/audi.png" alt="" class="partner__img--3">
+                            <img src="./asset/img/allianz.png" alt="" class="partner__img--4">
+                        </div>
+                        <div class="partner__img2">
+                            <img src="./asset/img/konami.png" alt="" class="partner__img--5">
+                            <img src="./asset/img/quatar.png" alt="" class="partner__img--6">
+                            <img src="./asset/img/siemens.png" alt="" class="partner__img--7">
+                            <img src="./asset/img/sap.png" alt="" class="partner__img--8">
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                           <a href="https://www.facebook.com/gialong.ly.79"> <span><i class="fab fa-facebook-f"></i></span> </a>
+                        </div>
+                        <div class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </div>
+                        <div class="icon youtube">
+                            <div class="tooltip">Youtube</div>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </div>
+                        <div class="icon snapchat">
+                            <div class="tooltip">Snapchat</div>
+                            <span><i class="fab fa-snapchat-ghost"></i></span>
+                        </div>
+                        <div class="icon twitter">
+                            <div class="tooltip">Twitter</div>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </div>
+                        <div class="icon github">
+                            <div class="tooltip">Github</div>
+                            <span><i class="fab fa-github"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>copyright &copy;2022 fcbayern .designed by <span>longlewy</span></p>
+                </div>
+
+                <div class="others">
+                    <div class="others__img">
+                        <img src="./asset/img/stadium.png" alt="" class="others__img--1">
+                        <img src="./asset/img/bundesliga.png" alt="" class="others__img--2">
+                    </div>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>
